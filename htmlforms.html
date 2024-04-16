@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form Shenanigans</title>
+</head>
+<body>
+    
+    <header>
+        <h1><strong>HTML Forms</strong></h1>
+    </header>
+    <main>
+        <h3>HTML Form with Various Input Elements</h3>
+        
+        <form action="/submit" method="POST">
+            <label for="username">Username (required):</label>
+            <input type="text" name="username" placeholder="johnd" autocomplete="on" aria-label="username" required>
+            <div role="alert" aria-live="assertive"></div>
+            
+            <label for="password">Password (required):</label>
+            <input type="password" name="password" pattern='[A-Z]{1,}[a-z]{1,}.*'placeholder="johnd6969" required>
+            <div role="alert" aria-live="assertive"></div>
+            
+            <label for="email">Email (required):</label>
+            <input type="email" name="email" autocomplete="on" placeholder="johnd69@gmail.com" required>
+            <div role="alert" aria-live="assertive"></div>
+            
+            <label for="subscribe">Subscribe to our Cool Coding Channel</label>
+            <input type="checkbox" name="subscribe" value="yes">
+            <div role="alert" aria-live="assertive"></div>
+            
+            <label for="language">Programming Language</label>
+            <input type="radio" name="language" value="Python">
+            <label for="language">Python</label>
+            <input type="radio" name="language" value="SQL">
+            <label for="language">SQL</label>
+            <input type="radio" name="language" value="HTML">
+            <label for="language">HTML</label>
+            <input type="radio" name="language" value="CSS">
+            <label for="language">CSS</label>
+            <div role="alert" aria-live="assertive"></div>
+            
+            <label for="coolstory">Tell us a Cool Story</label>
+            <textarea name="coolstory" rows="4" cols="50" placeholder="This one time at band camp..."></textarea>
+            <div role="alert" aria-live="assertive"></div>
+            
+            <button type="submit"><a href='/congrats.html'>Submit</a></button>
+            
+        </form>
+        
+        <br>
+        <hr>
+        <br>
+        
+        <h3>Some other cool thigns we can do with HTML Forms</h3>
+        <form action="/submit" method="POST">
+            
+            <label for="quantity">Quantity:</label>
+            <input type="number" name='quantity' min="10" max="100" step="10" autocomplete="on">
+            
+            <label for="date">Date:</label>
+            <input type="date" name="date">
+            
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+    
+</body>
+</html>
+

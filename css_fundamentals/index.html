@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Linking CSS page to our HTML page (most common) -->
+    <link rel="stylesheet" href="./static/main.css">
+    <title>CSS Fundamentals</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10+Charted&display=swap" rel="stylesheet">
+</head>
+<body>
+    <style>
+        /* 2nd precedent: Adding CSS styling INTO your HTML Document Internal*/
+        p {
+            color:aquamarine; 
+            font-family: "Jersey 10 Charted", "Arial", "Verdana", sans-serif; 
+        }
+    </style>
+    <header>
+        <!-- 1st precedent: adding the style attribute to any div/element provides inline css styling -->
+        <h1 style="color:goldenrod; font-weight:100;">Hello World. Welcome to our Cool Page</h1>
+        <div>
+            <h1>I am a grandchild of the Header div</h1>
+        </div>
+    </header>
+    <main>
+        <!-- <h1>Times for our Shows Below!</h1> -->
+        <p style="color: gainsboro; background-color:blueviolet;">Welcome to our sweet digital theater. Come enjoy the show! Take picks, tip your bartenders.</p>
+        <ul>
+            <li>Times: 3pm</li>
+            <li>Times: 5pm</li>
+            <li>Times: 7pm</li>
+        </ul>
+        <h3 style="background-color: blue">Show Listings:</h3>
+        <ul>
+            <li>BlondShell</li>
+            <li>Last Dinner Party</li>
+            <li>Chappel Roan</li>
+        </ul>
+        
+        <h1>Thanks for coming to our show!</h1>
+        
+        <p>Visit our link <a href="#">Here</a> to learn more about upcoming events</p>
+        <img class="blondshell" src="https://images.genius.com/4975c73310c2e66ac36d4a23478843d2.1000x1000x1.jpg"> 
+        
+        <img class="blondshell" id="border" src="https://readdork.com/wp-content/uploads/2023/04/The-Last-Dinner-Party-www.patrickgunning.com-3-2048x1366.jpg">
+        
+    </main>
+    <footer>
+        <p>&copy; CopyRight 2024 Alex Swiggum</p>
+    </footer>
+    
+</body>
+</html>

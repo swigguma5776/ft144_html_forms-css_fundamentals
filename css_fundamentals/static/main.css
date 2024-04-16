@@ -1,0 +1,66 @@
+/* 3rd precedent: CSS Stylesheet External */
+
+/* Simple Element Selectors */
+ul {
+    list-style-type:circle; 
+}
+
+a {
+    text-decoration: none; 
+    color: red;
+    font-weight:bolder; 
+}
+
+img {
+    border-radius: 10px; 
+    /* aspect-ratio: 1/1;  */
+}
+
+h3 {
+    color: white;
+    background-color: #00ff1e;
+}
+
+p {
+    font-style: italic;
+    color: #00ff1e !important; /*use with caution!*/
+    text-align: center; 
+    /* letter-spacing: 10px;  */
+}
+
+/* Class & ID Name Selectors */
+
+.blondshell {
+    max-height: 325px;
+    border: 2px solid goldenrod; 
+}
+
+#border {
+    border: 5px solid tomato; 
+}
+
+/* Combinator Selectors */
+
+/* > is DIRECT descendant aka child. */
+header > h1 {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* + grabs the DIRECT sibling */
+/* ~ grabs ANY sibling no matter their order */
+p ~ h1 {
+    font-size: 100px; 
+    color: #00d5ff; 
+}
+
+ul, footer > p {
+    border: 2px dashed pink; 
+}
+
+.jersey-10 charted-regular {
+    font-family: "Jersey 10 Charted", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
